@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 
 const productController = require('../controllers/product')
-const { upload } = require('../middleware/multer')
+const {upload} = require('../middleware/multer')
 
 router
   .get('/', productController.getAllData)

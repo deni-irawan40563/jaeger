@@ -3,7 +3,6 @@ const helpers = require('../helpers/helpers')
 
 module.exports = {
   createData: (req, res) => {
-    console.log(req.body)
     const {
       image,
       name,
@@ -17,7 +16,7 @@ module.exports = {
     }
     if (req.files) {
       data.image = req.files.map((file) => {
-        return process.env.BASE_URL+ '/uploads/image/'+ file.filename
+        return process.env.BASE_URL + '/uploads/image/'+ file.filename
       }).join()
     }
     ProductsModels.createData(data)
@@ -31,7 +30,6 @@ module.exports = {
   getAllData: (req, res) => {
     ProductsModels.getAllData()
       .then((result) => {
-        // client.setex('getAllProduct', 60 * 60 * 8, JSON.stringify(resultBooks))
         helpers.response(res, null, result, 200, null)
       })
       .catch((err) => {

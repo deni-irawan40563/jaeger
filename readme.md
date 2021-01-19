@@ -1,7 +1,3 @@
-# Toko Fuku API
-
-Tokofuku is an online shop website that is made specifically for e-commerce purposes, for many features to support transactions in online stores
-
 ## Build with
 * [Node.js](https://nodejs.org/en/)
 * [Express.js](https://expressjs.com/)
@@ -10,6 +6,17 @@ Tokofuku is an online shop website that is made specifically for e-commerce purp
 * [Node.js](https://nodejs.org/en/)
 * [Postman](https://www.getpostman.com/) for testing
 * [Database](db_sipPos.sql)
+
+## Package
+* [bcrypt](https://www.npmjs.com/package/bcrypt)
+* [body-parser](https://www.npmjs.com/package/body-parser)
+* [cors](https://www.npmjs.com/package/cors)
+* [dotenv](https://www.npmjs.com/package/dotenv)
+* [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+* [morgan](https://www.npmjs.com/package/morgan)
+* [multer](https://www.npmjs.com/package/multer)
+* [mysql2](https://www.npmjs.com/package/mysql2)
+* [nodemon](https://www.npmjs.com/package/nodemon)
 
 ## Project setup
 
@@ -48,4 +55,4 @@ npm run dev
 
 ## API documentation link
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://web.postman.co/documentation/12255985-0dff2513-a5ea-4c11-98ad-ddf998fb4051/publish)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/236289ca6d74bb8569dd)
