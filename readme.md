@@ -5,7 +5,7 @@
 ## Requirements
 * [Node.js](https://nodejs.org/en/)
 * [Postman](https://www.getpostman.com/) for testing
-* [Database](db_sipPos.sql)
+* [Dbms mySql](db_sipPos.sql)
 
 ## Package
 * [bcrypt](https://www.npmjs.com/package/bcrypt)
@@ -55,4 +55,4 @@ npm run dev
 
 ## API documentation link
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/236289ca6d74bb8569dd)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/12255985/TVzYetS7)
