@@ -1,5 +1,5 @@
 module.exports = {
-  response: (res, page, result, status, err, message) => {
+  response: (res, result, status, err, message) => {
     const resultPrint = {}
 
     if (status === 201) {
@@ -8,10 +8,6 @@ module.exports = {
       resultPrint.status = 'Failed'
     } else {
       resultPrint.status = 'Success'
-    }
-
-    if (page !== null) {
-      resultPrint.page = page
     }
 
     if (typeof result !== 'string') {

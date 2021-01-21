@@ -21,7 +21,7 @@ module.exports = {
     }
     ProductsModels.createData(data)
       .then((result) => {
-        helpers.response(res, null, result, 200, null)
+        helpers.response(res, result, 200, null, "create data successfully")
       })
       .catch((err) => {
         console.log(new Error(err))
@@ -30,7 +30,7 @@ module.exports = {
   getAllData: (req, res) => {
     ProductsModels.getAllData()
       .then((result) => {
-        helpers.response(res, null, result, 200, null)
+        helpers.response(res, result, 200, null, `User ${req.profile} : get all data successfully`)
       })
       .catch((err) => {
         console.log(new Error(err))
@@ -59,7 +59,7 @@ module.exports = {
 
     ProductsModels.updateData(id, data)
       .then((result) => {
-        helpers.response(res, null, result, 200, null)
+        helpers.response(res, result, 200, null, "update data successfully")
       })
       .catch((err) => {
         console.log(new Error(err))
@@ -69,7 +69,7 @@ module.exports = {
     const id = req.params.id
     ProductsModels.deleteData(id)
       .then((result) => {
-        helpers.response(res, null, result, 200, null)
+        helpers.response(res, result, 200, null, "delete data successfully")
       })
       .catch((err) => {
         console.log(new Error(err))

@@ -1,3 +1,7 @@
+## API documentation link
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/12255985/TVzYetS7)
+
 ## Build with
 * [Node.js](https://nodejs.org/en/)
 * [Express.js](https://expressjs.com/)
@@ -17,6 +21,8 @@
 * [multer](https://www.npmjs.com/package/multer)
 * [mysql2](https://www.npmjs.com/package/mysql2)
 * [nodemon](https://www.npmjs.com/package/nodemon)
+* [passport](https://www.npmjs.com/package/passport)
+* [passport-google-oauth20](https://www.npmjs.com/package/passport-google-oauth20)
 
 ## Project setup
 
@@ -45,14 +51,13 @@ DB_PASSWORD = your password for mysql
 DB_DATABASE = name your database
 PORT = your use port
 BASE_URL = http://localhost:your-port
+GOOGLE_CLIENT_ID = your client id
+GOOGLE_CLIENT_SECRET = your client secret
+CALLBACKURL = http://localhost:{your-port}/api/v1/products/auth/success
 ```
-
+### create folder uploads in your root project folder.
 ### Run project for development
 
 ```
 npm run dev
 ```
-
-## API documentation link
-
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/12255985/TVzYetS7)
